@@ -101,6 +101,20 @@
              <i class="fas fa-sign-out-alt fa-sm fa-fw"></i>
              <span>Logout</span></a>
      </li>
+     <!-- Divider -->
+     <hr class="sidebar-divider my-0">
+     <!-- Nav Item - Pages Collapse Menu -->
+     <li class="nav-item">
+         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#cms" aria-expanded="true" aria-controls="collapsePages">
+             <i class="fab fa-chrome fa-sm text-white-50"></i>
+             <span>CMS</span>
+         </a>
+         <div id="cms" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+             <div class="bg-white py-2 collapse-inner rounded">
+                 <a class="collapse-item" href="./SliderIndex.php">Slider</a>
+             </div>
+         </div>
+     </li>
 
      <!-- Divider -->
      <hr class="sidebar-divider d-none d-md-block">

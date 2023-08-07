@@ -1,6 +1,6 @@
 <?php
 require_once(__dir__ . '/Controller.php');
-require_once('./model/CMSController.php');
+require_once('./model/CMSModel.php');
 require_once('./controller/UploadFile.php');
 class CMSController extends Controller
 {
@@ -63,7 +63,7 @@ class CMSController extends Controller
         }
         else{
             $Response['status'] = 'Congress! Your Data added Successfully';
-            header("Location:cms/SliderIndex.php");
+            header("Location: ./SliderIndex.php");
             return $Response;
         }
     }
@@ -117,7 +117,7 @@ class CMSController extends Controller
         }
         else{
             $Response['status'] = 'Congress! Your Data Update Successfully';
-            header("location:cms/SliderIndex.php");
+            header("location: ./SliderIndex.php");
             return $Response;
         }
     }
@@ -136,12 +136,12 @@ class CMSController extends Controller
         $response =  $this->Model->deleteSlider($id);
         if(!$response){
             $Response['status'] = 'Sorry, An unexpected error occurred and your request could not be completed.';
-            header("location: cms/SliderIndex.php");
+            header("location: ./SliderIndex.php");
             return $Response;
         }
         else{
             $Response['status'] = 'Congress! Your Data Update Successfully';
-            header("location: cms/SliderIndex.php");
+            header("location: ./SliderIndex.php");
             return $response;
         }
     }

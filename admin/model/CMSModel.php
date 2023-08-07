@@ -77,7 +77,8 @@ class CMSModel extends Db
      **/
     public function UpdateSlider(array $data): array
     {
-        $this->query("UPDATE `slider` SET `title`=?,`shortDescription`=?,`btnOne`=?,`btnOnelink`=?,`btnTwo`=?,`btnTwolink`=?,`status`=?,`image`=?,`create_at`=? WHERE `id` = ?");
+        // var_dump($data);
+        $this->query("UPDATE `slider` SET `title`=?,`shortDescription`=?,`btnOne`=?,`btnOnelink`=?,`btnTwo`=?,`btnTwolink`=?,`status`=?,`image`=? WHERE `id` = ?");
         $this->bind(1, $data['title']);
         $this->bind(2, $data['shortDescription']);
         $this->bind(3, $data['btnOne']);
